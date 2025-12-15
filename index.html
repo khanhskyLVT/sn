@@ -1,0 +1,103 @@
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+        <!-- nền mờ -->
+    <div style="
+        position:absolute;
+        inset:0;
+        background: url('1.jpg') center / cover no-repeat;
+        filter: blur(12px);
+        transform: scale(1.1);
+		z-index: 1;
+    "></div>
+<body>
+	<div class="heart" style="z-index: 98;"></div>
+    <div style="
+        position:absolute;
+        inset:30px;
+        background: url('1.jpg') center / cover no-repeat;
+        filter: blur(12px);
+        transform: scale(1.1);
+		z-index: 1;
+    "></div>
+
+    <div style="
+        position:absolute;
+        inset:0;
+		z-index: 2;
+        background: url('1.jpg') center / contain no-repeat;
+    "></div>
+	
+    <div class="container">
+        <div class="row">
+            <div class="birth-cover-container">
+                <button id="birth-start-btn" disabled>ready</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 歌曲 -->
+    <audio class="song" controls loop style="display: none; opacity: 0">
+        <source src="music/index.mp3" />
+    </audio>
+
+    <!-- 彩带 -->
+    <canvas id="brith-confetti"></canvas>
+
+    <!-- 主内容 -->
+    <div class="main">
+        <div class="container pt-5">
+            <div class="row">
+
+
+                <!-- 寿星 -->
+                <div class="col-12  text-center">
+                    <div id="name" class="birth-people-name">🥳Lương Chi🎊</div>
+                </div>
+
+                <!-- 祝词 -->
+                <div class="col-12 text-center">
+                    <div class="birth-greeting-word">
+                        <div id="greeting-word" class="typing">
+                            <h2><span>Chúc Mừng Sinh Nhật</span><i id="inline-name" class="birth-inline-people-name"> Lương Chi</i><span id="people-type"></span></h2>
+                            <h2>Chúc m tuổi mới xinh hơn hôm qua.</h2>
+                            <h2>Vui nhiều hơn, buồn ít lại.</h2>
+                            <h2>Luôn được yêu thương theo cách mày xứng đáng.</h2>
+                            <h2>Mệt mỏi thì nhớ còn có tao bên cạnh.</h2>
+                            <h2>Khóc cười gì cũng có đứa hiểu.</h2>
+                            <h2>Cảm ơn vì đã làm bạn thân của t.</h2>
+                            <h2>Sinh nhật thật vui nhé, cô gái của t 🎂💗</h2>
+                        </div>
+                        <span id="typed" style="white-space: pre;"></span>
+                    </div>
+                </div>
+        <footer class="col-12 text-center bg-transparent footer">
+            <span class="birth-greeting-word" id="author">
+                &copy;2025_Phương Anh
+            </span>
+        </footer>
+            </div>
+        </div>
+
+        <!-- 气球图 -->
+        <img src="img/balloon.png" alt="balloon" class="brith-balloon">
+    </div>
+
+    <script src="js/lib/snowflakes.min.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/typed.min.js"></script>
+    <script src="js/lib/dayjs.min.js"></script>
+    <script src="js/confetti.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
